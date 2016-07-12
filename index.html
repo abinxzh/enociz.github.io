@@ -27,11 +27,13 @@
       .h-full { height: 100vh; }
 
       .target-hide:not(:target) {
+        display: none;
         left: 100%;
         transition: left 1.5s;
       }
 
       .target-hide:target {
+        display: block;
         left: 0;
         transition: left 1s;
       }
