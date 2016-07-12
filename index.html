@@ -25,6 +25,16 @@
 
     <style>
       .h-full { height: 100vh; }
+
+      .target-hide:not(:target) {
+        right: -100%;
+        transition: right 1.5s;
+      }
+
+      .target-hide:target {
+        right: 0;
+        transition: right 1s;
+      }
     </style>
   </head>
   <body class="w-100 bg-white">
