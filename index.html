@@ -26,14 +26,12 @@
     <style>
       .h-full { height: 100vh; }
 
-      .target-hide:not(:target) {
-        display: none;
+      .target-hide {
         left: 100%;
         transition: left 1.5s;
       }
 
       .target-hide:target {
-        display: table-cell;
         left: 0;
         transition: left 1s;
       }
