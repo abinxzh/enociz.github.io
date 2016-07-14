@@ -35,10 +35,6 @@
         left: 0;
         transition: left 1s;
       }
-
-      section:target + #mobile-Nav {
-        display: none;
-      }
     </style>
   </head>
   <body class="w-100 bg-white">
@@ -46,7 +42,7 @@
 <nav class="dt w-100 border-box pa3 ph2 ph5-ns mb3 fixed top-0 left-0 bg-white-60">
   <a class="ph3 dtc v-mid mid-gray link dim w-25 tl mb0" href="index.html" title="Home">
   
-    <img src="img/logo.png" class="dib w2 h2 br-100" alt="Elephant Logo">
+    <img src="img/logo.png" class="dib w3 br-100" alt="Elephant Logo">
   </a>
   
   <div class="dtc v-mid w-25 tr">
@@ -54,7 +50,7 @@
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns mr3 mr4-ns" href="#about" title="About">About</a>
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns mr3 mr4-ns" href="#portfolio" title="Portfolio">Portfolio</a>
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns" href="#contact" title="Contact">Contact</a>
-    <a class="link dim dark-gray f6 db dn-ns pr3" href="#mobile-nav" title="Open Nav">≣</a>
+    <a class="link dim dark-gray f5 db dn-ns pr3" href="#mobile-nav" title="Open Nav">≣</a>
   </div>
   
 </nav>
@@ -68,7 +64,7 @@
       
       <img src="img/hero.jpg" class="mb3 w-100 measure-ns">
 
-      <p class="sans-serif measure center tl"><strong>Jeff Free</strong> &mdash; Designer in Melbourne VIC</p>
+      <p class="sans-serif measure center tc tl-ns"><strong>Jeff Free</strong> &mdash; Designer in Melbourne VIC</p>
     
     </header>
     
@@ -82,7 +78,7 @@
       <h1 class="monospace f3 f2-ns lh-solid tc">About</h1>
       <p class="serif f5 i dark-gray lh-copy tc">Hello, and welcome!</p>
 
-      <div class="measure center mv5">
+      <div class="ph2 measure-ns center mv5">
 
         <div class="mb5">
 
@@ -257,12 +253,6 @@ DARE - IāNDUSTōRY Launch Concept</a>
         <a data-scroll class="link dim white f6 db" href="#contact" title="Contact">Contact</a>
       </div>
     </nav>
-
-    <script>
-    document.getElementById('close').onclick = function () {
-      location.hash = '';
-    };
-    </script>
 
   </body>
 
