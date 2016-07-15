@@ -35,6 +35,12 @@
         top: 0;
         transition: top 1s;
       }
+
+      #nav-button:hover, #nav-button:active {
+        -ms-transform: rotate(45deg); /* IE 9 */
+        -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+      }
     </style>
   </head>
   <body class="w-100 bg-white">
@@ -50,7 +56,7 @@
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns mr3 mr4-ns" href="#about" title="About">About</a>
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns mr3 mr4-ns" href="#portfolio" title="Portfolio">Portfolio</a>
     <a data-scroll class="link dim dark-gray f6 f5-ns dn dib-ns" href="#contact" title="Contact">Contact</a>
-    <a class="link dim dark-gray f2 db dn-ns pr3" href="#mobile-nav" title="Open Nav">+</a>
+    <a id="nav-button class="link dim dark-gray f2 db dn-ns pr3" href="#mobile-nav" title="Open Nav">+</a>
   </div>
   
 </nav>
