@@ -37,3 +37,69 @@
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+@media screen and (max-width:21em) {
+.typewrite {
+  font-size: 40px;
+}
+}
+@media screen and (min-width:21em) and (max-width:30em) {
+.typewrite {
+  font-size: 48px;
+}
+}
+@media screen and (min-width:30em) and (max-width:60em){
+.typewrite {
+  font-size: 72px;
+}
+}
+@media screen and (min-width:60em){
+.typewrite {
+  font-size: 96px;
+}
+}
+
+
+/* CHECKED STATE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.more-container [type="checkbox"] {
+  opacity: 0;
+}
+.more-container label {
+  display: block;
+  width: 100%;
+  height: 3em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  transition: top .45s cubic-bezier(.44, .99, .48, 1);
+}
+.more-container label:before,
+.more-container label:after {
+  position: absolute;
+}
+.more-container label:before {
+  content: 'More';
+  left: 10px;
+}
+.more-container label:after {
+  content: '⇣';
+  right: 10px;
+  -webkit-animation: sudo .85s linear infinite alternate;
+  animation: sudo .85s linear infinite alternate;
+}
+.more-container p {
+  display: none;
+}
+[type="checkbox"]:checked ~ p {
+  display: block;
+}
+.more-container>[type="checkbox"]:checked + label {
+  top: 98%;
+}
+.more-container>[type="checkbox"]:checked + label:before {
+  content: 'Less';
+}
+.more-container>[type="checkbox"]:checked + label:after {
+  content: '⇡';
+}
